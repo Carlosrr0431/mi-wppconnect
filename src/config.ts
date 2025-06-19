@@ -12,7 +12,7 @@ export default {
   customUserDataDir: './userDataDir/',
 webhook: {
   url: null,                   // No hay URL de webhook configurada aún
-  autoDownload: false,          // Descarga automática de archivos multimedia
+  autoDownload: true,          // Descarga automática de archivos multimedia
   readMessage: false,           // Marca los mensajes como leídos al recibirlos
   listenAcks: true,            // Escucha confirmaciones de lectura (ticks)
   onPresenceChanged: false,    // ❌ No escucha cambios de presencia (por ejemplo: "escribiendo...")

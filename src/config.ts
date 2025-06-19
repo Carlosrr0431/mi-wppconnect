@@ -8,24 +8,22 @@ export default {
   poweredBy: 'WPPConnect-Server',
   startAllSession: true,
   tokenStoreType: 'file',
-  maxListeners: 15,
+  maxListeners: 30,
   customUserDataDir: './userDataDir/',
-  webhook: {
-    url: null,
-    autoDownload: true,
-    uploadS3: false,
-    readMessage: true,
-    allUnreadOnStart: false,
-    listenAcks: true,
-    onPresenceChanged: true,
-    onParticipantsChanged: true,
-    onReactionMessage: true,
-    onPollResponse: true,
-    onRevokedMessage: true,
-    onLabelUpdated: true,
-    onSelfMessage: false,
-    ignore: ['status@broadcast'],
-  },
+webhook: {
+  url: null,                   // No hay URL de webhook configurada aún
+  autoDownload: true,          // Descarga automática de archivos multimedia
+  readMessage: true,           // Marca los mensajes como leídos al recibirlos
+  listenAcks: true,            // Escucha confirmaciones de lectura (ticks)
+  onPresenceChanged: false,    // ❌ No escucha cambios de presencia (por ejemplo: "escribiendo...")
+  onParticipantsChanged: false, // ❌ No escucha cambios en participantes de grupos
+  onReactionMessage: false,    // ❌ No escucha reacciones (emojis)
+  onPollResponse: false,        // ✅ Escucha respuestas a encuestas
+  onRevokedMessage: false,      // ✅ Escucha cuando un mensaje se borra para todos
+  onLabelUpdated: false,        // ✅ Escucha cambios de etiquetas
+  onSelfMessage: false,        // ❌ No procesa mensajes enviados por el propio bot
+  ignore: ['status@broadcast'] // Ignora mensajes del estado de WhatsApp
+},
   websocket: {
     autoDownload: false,
     uploadS3: false,

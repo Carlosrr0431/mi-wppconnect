@@ -8,11 +8,11 @@ export default {
   poweredBy: 'WPPConnect-Server',
   startAllSession: true,
   tokenStoreType: 'file',
-  maxListeners: 30,
+  maxListeners: 10,
   customUserDataDir: './userDataDir/',
 webhook: {
   url: null,                   // No hay URL de webhook configurada aún
-  autoDownload: true,          // Descarga automática de archivos multimedia
+  autoDownload: false,          // Descarga automática de archivos multimedia
   readMessage: false,           // Marca los mensajes como leídos al recibirlos
   listenAcks: true,            // Escucha confirmaciones de lectura (ticks)
   onPresenceChanged: false,    // ❌ No escucha cambios de presencia (por ejemplo: "escribiendo...")
@@ -29,8 +29,8 @@ webhook: {
     uploadS3: false,
   },
   chatwoot: {
-    sendQrCode: true,
-    sendStatus: true,
+    sendQrCode: false,
+    sendStatus: false,
   },
   archive: {
     enable: false,
@@ -38,14 +38,13 @@ webhook: {
     daysToArchive: 45,
   },
   log: {
-    level: 'silly', // Before open a issue, change level to silly and retry a action
-    logger: ['console', 'file'],
+    level: 'warn', // Before open a issue, change level to silly and retry a action
+    logger: ['console'],
   },
   createOptions: {
     browserArgs: [
       '--disable-web-security',
       '--no-sandbox',
-      '--disable-web-security',
       '--aggressive-cache-discard',
       '--disable-cache',
       '--disable-application-cache',

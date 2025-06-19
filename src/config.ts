@@ -13,7 +13,7 @@ export default {
 webhook: {
   url: null,                   // No hay URL de webhook configurada aún
   autoDownload: true,          // Descarga automática de archivos multimedia
-  readMessage: true,           // Marca los mensajes como leídos al recibirlos
+  readMessage: false,           // Marca los mensajes como leídos al recibirlos
   listenAcks: true,            // Escucha confirmaciones de lectura (ticks)
   onPresenceChanged: false,    // ❌ No escucha cambios de presencia (por ejemplo: "escribiendo...")
   onParticipantsChanged: false, // ❌ No escucha cambios en participantes de grupos

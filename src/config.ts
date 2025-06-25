@@ -8,7 +8,7 @@ export default {
   poweredBy: 'WPPConnect-Server',
   startAllSession: true,
   tokenStoreType: 'file',
-  maxListeners: 10,
+  maxListeners: 100,
   customUserDataDir: './userDataDir/',
 webhook: {
   url: null,                   // No hay URL de webhook configurada aún

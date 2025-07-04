@@ -6,13 +6,13 @@ export default {
   port: '21465',
   deviceName: 'WppConnect',
   poweredBy: 'WPPConnect-Server',
-  startAllSession: true,
+  startAllSession: false,
   tokenStoreType: 'file',
   maxListeners: 100,
   customUserDataDir: './userDataDir/',
 webhook: {
   url: null,                   // No hay URL de webhook configurada aún
-  autoDownload: true,          // Descarga automática de archivos multimedia
+  autoDownload: false,          // Descarga automática de archivos multimedia
   readMessage: false,           // Marca los mensajes como leídos al recibirlos
   listenAcks: true,            // Escucha confirmaciones de lectura (ticks)
   onPresenceChanged: false,    // ❌ No escucha cambios de presencia (por ejemplo: "escribiendo...")

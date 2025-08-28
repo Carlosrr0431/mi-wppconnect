@@ -9,7 +9,7 @@ export default {
   startAllSession: false,
   tokenStoreType: 'file',
   maxListeners: 100,
-  customUserDataDir: './userDataDir/',
+  customUserDataDir: '/app/userDataDir/',
 webhook: {
   url: null,                   // No hay URL de webhook configurada aún
   autoDownload: true,          // Descarga automática de archivos multimedia

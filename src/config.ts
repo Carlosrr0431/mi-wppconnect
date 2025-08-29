@@ -2,9 +2,8 @@ import { ServerOptions } from './types/ServerOptions';
 
 export default {
   secretKey: 'THISISMYSECURETOKEN',
-  // host: 'https://mi-wppconnect.onrender.com',
-  host: '0.0.0.0',
-  port: '21465',
+  host: 'https://mi-wppconnect.onrender.com',
+  port: '10000',
   deviceName: 'WppConnect',
   poweredBy: 'WPPConnect-Server',
   startAllSession: false,
